@@ -1,0 +1,80 @@
+header {
+    display: flex;
+    align-items: center;
+    padding: 3em 4em;
+    background-color: $backgroundColor;
+    color: $textColor;
+    & .logo{
+        margin-right: auto;
+        text-transform: uppercase;
+        font-weight: 700; 
+        font-size: 16px;     
+    }
+    & .menu {
+        display: flex;
+        align-items: center;
+        & ul {
+            display: flex; 
+            justify-content: space-between;
+            &:first-child {
+                margin-right: 4.5em;               
+            } 
+            & li {
+                list-style: none;
+                text-transform: uppercase;
+                color: $textColor;   
+                letter-spacing: 1px;
+                font-weight: 700; 
+                font-size: 12px;
+                margin-left: 2em;                        
+            }    
+            & .iconContainer{
+                display: flex;
+                align-items: center;
+                & span {
+                    font-weight: bold; 
+                    letter-spacing: 1px;
+                    font-size: 16px;
+                    margin-right: 0.3em;
+                } 
+            }                     
+        }
+    }
+    & .toggleLight {
+        display: flex;
+        align-items: center;
+        & .iconLight {
+            margin-left: 2em;
+            font-size: 20px;
+            color: yellow;
+        }
+    }
+   
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+    header {
+        padding: 2em;
+        & .logo{
+            font-size: 12px;   
+        }
+    }
+}
+
+
+@media (min-width: 453px) and (max-width: 768px) {
+    header {
+        padding: 1em;
+        & .logo{
+            font-size: 12px;   
+        }
+        & ul{
+            &:nth-child(2){
+                display: none;
+            }
+            &:first-child {
+                margin-right: 0.5em;               
+            } 
+        }       
+    }
+}

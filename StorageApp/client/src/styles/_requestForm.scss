@@ -1,0 +1,80 @@
+.formContainer{
+    position: relative;
+    background-color: $backgroundColor;
+    max-width: 40em; 
+    padding: 2em;
+    margin:0 auto;
+    & .infoDiv {
+        margin: 1em;
+        text-align: center;
+        position: absolute;
+        background-color: $textColor;
+        opacity: 0.9;
+        font-size: 18px;
+        font-weight: 700;
+        color: $backgroundColor;
+        top: 0;
+        left: 0;
+        padding: 2em;
+    }
+    & .infoIcon {
+        position: absolute;
+        bottom: 0;
+        right: 6px;
+        font-size: 22px;
+        color: $textColor;
+        cursor: pointer;
+    }
+    & .emptyShops {
+        margin:0 auto;
+        color: $textColor;
+        font-size: 14px;
+        text-transform: uppercase;
+        margin-bottom: 1em;
+    }
+    & .options {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        & div {
+            align-items: center;
+            margin-bottom: 0.7em;
+            margin-right: auto;
+            color: $textColor;
+            & input[type=radio]{
+                margin-right: 0.4em;
+            }
+            & label {
+                font-size: 13px;
+                font-weight: 700;
+            }
+        }
+    }
+    & form {
+        display: flex;
+        flex-direction: column;
+        & div {
+            display: flex;
+            justify-content: space-between;
+            & input[type=text]{
+                color:  $backgroundColor;
+                width: 49%;
+                padding: 0.5em;
+                margin-bottom: 0.8em;
+            }      
+        }   
+        & input[type=submit]{
+            flex-basis: 100%;
+            padding: 0.5em;
+            color: $backgroundColor;
+            cursor: pointer;
+        }
+    }
+}
+
+
+@media (min-width: 453px) and (max-width: 768px){
+    .formContainer{
+        max-width: 30em;
+    }
+}   

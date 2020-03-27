@@ -1,0 +1,91 @@
+.homeMain {
+    display: flex;  
+    flex-wrap: wrap;
+    max-width: 90vw;
+    height: 90vh;
+    margin: 0 auto;
+    padding:2em;
+    & .leftSection{
+        background-image: url(../media/PngItem_227282.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;      
+        flex: 1 1 55%;
+    }
+    & .rightSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex: 1 1 40%;  
+        & h1 {
+            text-align: end;
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: $backgroundColor;
+            margin-bottom: 3.5em;
+            & span{
+                margin-top: 0.2em;
+                display: block;
+            }
+        }
+        & p{
+            text-align: end;
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            color: $backgroundColor;
+        }
+        & .button{
+            width: 100%;
+            text-align: end; 
+            & button {                    
+                margin: 3.5em auto 1em auto;
+                padding: 0.8em;
+                background-color: transparent;
+                border: 2px solid $backgroundColor;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+                font-size: 15px;
+                font-weight: 700;
+                outline: none;
+                cursor: pointer;
+                transition: all .3s ease-in-out;
+                &:hover {
+                    background-color:$backgroundColor;
+                    color: $textColor;
+                }
+            }
+        }
+    }   
+}
+.homeFooter {
+    display: flex;
+    padding: 3em 2em;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: $backgroundColor ;
+    & .infoCard {
+        flex: 1 1 20%;
+        text-align: center;
+        padding: 2em;
+        border: 2px solid $textColor;
+        color: $textColor;
+        margin-right: 2em;
+        transition: all .3s ease-in-out;
+        & i {
+            font-size: 45px;
+        }
+        & p{
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: .5px;
+            margin: 1.5em 0.7em 1em 0.7em;
+        }
+        &:hover{
+            color: $backgroundColor;
+            background-color: $textColor;
+        }
+    }
+}

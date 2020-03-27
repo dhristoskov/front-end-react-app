@@ -1,0 +1,79 @@
+.authSection{
+    margin: 3.5em 5em;
+    & h2 {
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: $backgroundColor;
+        margin-bottom: 1em;
+    }
+    & .authFrom {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 35em;
+        padding: 2em;
+        margin: 0 auto;
+        background-color: $backgroundColor;
+        & input[type=text],
+          input[type=password],
+          input[type=submit],
+          input[type=email]{
+              border: 1px solid $textColor;
+              color: $textColor;
+              background-color: transparent;
+              padding: 0.7em;
+              margin-bottom: 1.2em;
+        }
+        & div {
+            display: flex;
+            position: relative;
+            & input[type=password],
+                  input[type=text]{
+                width: 100%;
+            }
+            & .iconVisibility{
+                font-size: 20px;
+                position: absolute;
+                right: 10px;
+                top: 6px;
+                color: $textColor;
+                cursor: pointer;
+                transition: all .3 ease-in-out;
+                &:hover {
+                    color: rgb(22, 201, 201);
+            }
+            }
+        }    
+        & input[type=submit]{
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0;
+            cursor: pointer;
+            transition: all .3s ease-in-out;
+            &:hover {
+                color: $backgroundColor;
+                background-color: $textColor;
+                border: 1px solid $backgroundColor;
+            }
+        }
+        & p {
+            text-align: center;
+            margin-top: 1em;
+            padding:1em 2em;
+            color: $textColor;
+        }
+    }
+}
+
+@media (min-width: 453px) and (max-width: 768px){
+    .authSection{
+        & .authFrom {
+            width: 25em;
+        }
+        & p {
+            margin-top: 0.5em;
+            font-size: 10px;
+        }
+    }   
+}

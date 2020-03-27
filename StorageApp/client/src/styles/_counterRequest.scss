@@ -1,0 +1,70 @@
+.infoMain {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1em 4em;
+    & .renderInfo {
+        & .totalPrice{
+            text-align: end;
+            font-size: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            padding:0.5em 2em;
+            background-color:$textColor;
+            border: 2px solid $backgroundColor;
+        }
+    }
+    & .infoRequests {
+        flex: 1 1 30%;
+        margin: 2em 0;
+        & .shopListInfo{
+            position: relative;
+            margin-bottom: 0.3em;
+            & button {
+                position: absolute;
+                padding: 0.5em;
+                top: 4px;
+                right: 45px;
+                cursor: pointer;         
+                font-size: 13px;
+                color:  $textColor ;
+                outline: none;
+                background-color:  #5D4061;
+                border: 1px solid $textColor;
+                transition: all .2s ease-in;
+                &:hover {
+                    background-color: $textColor;
+                    color:$backgroundColor;
+                    border: 1px solid $backgroundColor;
+                }
+            }
+        }
+        & h1 {
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: $backgroundColor;
+            margin-bottom: 1em;
+        }
+        & .infoData {
+            display: flex;
+            justify-content: space-evenly;
+            background-color: $backgroundColor;   
+            width: 30em; 
+            margin: 0 auto;
+            padding: 1.5em;
+            & p {
+                text-align: center;
+                color: $textColor;
+                font-size: 13px;
+                text-transform: uppercase;
+                & span {
+                    font-size: 16px;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+    & .renderInfo{
+        flex: 1 1 66%;
+    }
+}

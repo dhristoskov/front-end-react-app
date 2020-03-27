@@ -1,0 +1,53 @@
+.shopEmptyList {
+    background-color: $backgroundColor;   
+    width: 30em; 
+    padding: 1.5em;
+    margin: 5em auto 1em auto;
+    color: $textColor;   
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.shopListContainer {
+    background-color: $backgroundColor;   
+    width: 30em; 
+    margin: 5em auto 1em auto;
+    .listItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5em;
+        & p {  
+            flex: 0 0 33%;       
+            padding: 0.5em;  
+            color: $textColor;   
+            font-size: 12px;
+        }
+        & input{
+            padding: 0.4em;  
+            color: $backgroundColor;   
+            font-size: 16px;
+            width: 33%;
+        }
+        & .settings {
+            display: flex;    
+            & p {
+                cursor: pointer;         
+                font-size: 13px;
+                margin: 0.3em;
+                border: 1px solid $textColor;
+                transition: all .2s ease-in;
+                &:hover {
+                    background-color: $textColor;
+                    color:$backgroundColor;
+                    border: 1px solid $backgroundColor;
+                }
+            }
+        }
+        &:nth-child(odd){
+            background-color: #5D4061;
+        }
+    }
+}
+

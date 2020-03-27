@@ -1,0 +1,76 @@
+.emptyList {
+    background-color: $backgroundColor;   
+    width: 40em; 
+    padding: 1.5em;
+    margin: 5em auto 1em auto;
+    color: $textColor;   
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-align: center;
+}
+.listContainer {
+    background-color: $backgroundColor;   
+    width: 40em; 
+    margin: 5em auto 1em auto;
+    .listItem{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 0.5em;
+        & .components{
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-basis: 80%;
+            & .checkbox {
+                flex:1 1 5%;
+            }
+            & p { 
+                flex:1 1 30%;       
+                padding: 0.5em;  
+                color: $textColor;   
+                font-size: 12px;
+            }
+        }
+        & input{
+            padding: 0.4em;  
+            color: $backgroundColor;   
+            font-size: 16px;
+            width: 33%;
+        }
+        & .settings {
+            display: flex;
+            & p {
+                align-items: center;
+                cursor: pointer;
+                padding: 0.5em;  
+                color: $textColor; 
+                margin: 0.3em;
+                font-size: 13px;
+                border: 1px solid $textColor;
+                transition: all .2s ease-in;
+                &:hover {
+                    background-color: $textColor;
+                    color:$backgroundColor;
+                    border: 1px solid $backgroundColor;
+                }
+            }
+        }
+        &:nth-child(odd){
+            background-color: #5D4061;
+        }
+    }
+}
+
+
+@media (min-width: 453px) and (max-width: 768px){
+    & .emptyList{
+        max-width: 30em;
+    }
+    &.listContainer {
+        max-width: 30em;
+    }
+}   
+

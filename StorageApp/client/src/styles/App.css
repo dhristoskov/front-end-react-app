@@ -1,0 +1,793 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo:400,700&display=swap&subset=cyrillic");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font: 14px 'Arimo', sans-serif;
+}
+
+*, *::after, *::before {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em 4em;
+  background-color: #25283D;
+  color: #EBEBED;
+}
+
+header .logo {
+  margin-right: auto;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+}
+
+header .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .menu ul:first-child {
+  margin-right: 4.5em;
+}
+
+header .menu ul li {
+  list-style: none;
+  text-transform: uppercase;
+  color: #EBEBED;
+  letter-spacing: 1px;
+  font-weight: 700;
+  font-size: 12px;
+  margin-left: 2em;
+}
+
+header .menu ul .iconContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .menu ul .iconContainer span {
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  margin-right: 0.3em;
+}
+
+header .toggleLight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .toggleLight .iconLight {
+  margin-left: 2em;
+  font-size: 20px;
+  color: yellow;
+}
+
+@media (min-width: 768px) and (max-width: 950px) {
+  header {
+    padding: 2em;
+  }
+  header .logo {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 453px) and (max-width: 768px) {
+  header {
+    padding: 1em;
+  }
+  header .logo {
+    font-size: 12px;
+  }
+  header ul:nth-child(2) {
+    display: none;
+  }
+  header ul:first-child {
+    margin-right: 0.5em;
+  }
+}
+
+.emptyList {
+  background-color: #25283D;
+  width: 40em;
+  padding: 1.5em;
+  margin: 5em auto 1em auto;
+  color: #EBEBED;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.listContainer {
+  background-color: #25283D;
+  width: 40em;
+  margin: 5em auto 1em auto;
+}
+
+.listContainer .listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.5em;
+}
+
+.listContainer .listItem .components {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-preferred-size: 80%;
+      flex-basis: 80%;
+}
+
+.listContainer .listItem .components .checkbox {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 5%;
+          flex: 1 1 5%;
+}
+
+.listContainer .listItem .components p {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  padding: 0.5em;
+  color: #EBEBED;
+  font-size: 12px;
+}
+
+.listContainer .listItem input {
+  padding: 0.4em;
+  color: #25283D;
+  font-size: 16px;
+  width: 33%;
+}
+
+.listContainer .listItem .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.listContainer .listItem .settings p {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 0.5em;
+  color: #EBEBED;
+  margin: 0.3em;
+  font-size: 13px;
+  border: 1px solid #EBEBED;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.listContainer .listItem .settings p:hover {
+  background-color: #EBEBED;
+  color: #25283D;
+  border: 1px solid #25283D;
+}
+
+.listContainer .listItem:nth-child(odd) {
+  background-color: #5D4061;
+}
+
+@media (min-width: 453px) and (max-width: 768px) {
+  .emptyList {
+    max-width: 30em;
+  }
+  .listContainer {
+    max-width: 30em;
+  }
+}
+
+.formContainer {
+  position: relative;
+  background-color: #25283D;
+  max-width: 40em;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.formContainer .infoDiv {
+  margin: 1em;
+  text-align: center;
+  position: absolute;
+  background-color: #EBEBED;
+  opacity: 0.9;
+  font-size: 18px;
+  font-weight: 700;
+  color: #25283D;
+  top: 0;
+  left: 0;
+  padding: 2em;
+}
+
+.formContainer .infoIcon {
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  font-size: 22px;
+  color: #EBEBED;
+  cursor: pointer;
+}
+
+.formContainer .emptyShops {
+  margin: 0 auto;
+  color: #EBEBED;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-bottom: 1em;
+}
+
+.formContainer .options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.formContainer .options div {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 0.7em;
+  margin-right: auto;
+  color: #EBEBED;
+}
+
+.formContainer .options div input[type=radio] {
+  margin-right: 0.4em;
+}
+
+.formContainer .options div label {
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.formContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formContainer form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.formContainer form div input[type=text] {
+  color: #25283D;
+  width: 49%;
+  padding: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.formContainer form input[type=submit] {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0.5em;
+  color: #25283D;
+  cursor: pointer;
+}
+
+@media (min-width: 453px) and (max-width: 768px) {
+  .formContainer {
+    max-width: 30em;
+  }
+}
+
+.authSection {
+  margin: 3.5em 5em;
+}
+
+.authSection h2 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #25283D;
+  margin-bottom: 1em;
+}
+
+.authSection .authFrom {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 35em;
+  padding: 2em;
+  margin: 0 auto;
+  background-color: #25283D;
+}
+
+.authSection .authFrom input[type=text],
+.authSection .authFrom input[type=password],
+.authSection .authFrom input[type=submit],
+.authSection .authFrom input[type=email] {
+  border: 1px solid #EBEBED;
+  color: #EBEBED;
+  background-color: transparent;
+  padding: 0.7em;
+  margin-bottom: 1.2em;
+}
+
+.authSection .authFrom div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+}
+
+.authSection .authFrom div input[type=password],
+.authSection .authFrom div input[type=text] {
+  width: 100%;
+}
+
+.authSection .authFrom div .iconVisibility {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+  color: #EBEBED;
+  cursor: pointer;
+  -webkit-transition: all .3 ease-in-out;
+  transition: all .3 ease-in-out;
+}
+
+.authSection .authFrom div .iconVisibility:hover {
+  color: #16c9c9;
+}
+
+.authSection .authFrom input[type=submit] {
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-bottom: 0;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.authSection .authFrom input[type=submit]:hover {
+  color: #25283D;
+  background-color: #EBEBED;
+  border: 1px solid #25283D;
+}
+
+.authSection .authFrom p {
+  text-align: center;
+  margin-top: 1em;
+  padding: 1em 2em;
+  color: #EBEBED;
+}
+
+@media (min-width: 453px) and (max-width: 768px) {
+  .authSection .authFrom {
+    width: 25em;
+  }
+  .authSection p {
+    margin-top: 0.5em;
+    font-size: 10px;
+  }
+}
+
+.shopEmptyList {
+  background-color: #25283D;
+  width: 30em;
+  padding: 1.5em;
+  margin: 5em auto 1em auto;
+  color: #EBEBED;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.shopListContainer {
+  background-color: #25283D;
+  width: 30em;
+  margin: 5em auto 1em auto;
+}
+
+.shopListContainer .listItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 0.5em;
+}
+
+.shopListContainer .listItem p {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33%;
+          flex: 0 0 33%;
+  padding: 0.5em;
+  color: #EBEBED;
+  font-size: 12px;
+}
+
+.shopListContainer .listItem input {
+  padding: 0.4em;
+  color: #25283D;
+  font-size: 16px;
+  width: 33%;
+}
+
+.shopListContainer .listItem .settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.shopListContainer .listItem .settings p {
+  cursor: pointer;
+  font-size: 13px;
+  margin: 0.3em;
+  border: 1px solid #EBEBED;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.shopListContainer .listItem .settings p:hover {
+  background-color: #EBEBED;
+  color: #25283D;
+  border: 1px solid #25283D;
+}
+
+.shopListContainer .listItem:nth-child(odd) {
+  background-color: #5D4061;
+}
+
+.requestContsainer {
+  margin: 0 5em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.formShopContainer {
+  position: relative;
+  background-color: #25283D;
+  max-width: 30em;
+  padding: 2em;
+  margin: 0 auto;
+}
+
+.formShopContainer .infoDiv {
+  margin: 1em;
+  text-align: center;
+  position: absolute;
+  background-color: #EBEBED;
+  opacity: 0.9;
+  font-size: 18px;
+  font-weight: 700;
+  color: #25283D;
+  top: 0;
+  left: 0;
+  padding: 0.5em;
+}
+
+.formShopContainer .infoIcon {
+  position: absolute;
+  bottom: 0;
+  right: 6px;
+  font-size: 22px;
+  color: #EBEBED;
+  cursor: pointer;
+}
+
+.formShopContainer form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.formShopContainer form input[type=text] {
+  color: #25283D;
+  width: 32%;
+  padding: 0.5em;
+  margin-bottom: 0.8em;
+}
+
+.formShopContainer form input[type=submit] {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  padding: 0.5em;
+  color: #25283D;
+  cursor: pointer;
+}
+
+.homeMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 90vw;
+  height: 90vh;
+  margin: 0 auto;
+  padding: 2em;
+}
+
+.homeMain .leftSection {
+  background-image: url(../media/PngItem_227282.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 55%;
+          flex: 1 1 55%;
+}
+
+.homeMain .rightSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 40%;
+          flex: 1 1 40%;
+}
+
+.homeMain .rightSection h1 {
+  text-align: end;
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1.5px;
+  color: #25283D;
+  margin-bottom: 3.5em;
+}
+
+.homeMain .rightSection h1 span {
+  margin-top: 0.2em;
+  display: block;
+}
+
+.homeMain .rightSection p {
+  text-align: end;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  color: #25283D;
+}
+
+.homeMain .rightSection .button {
+  width: 100%;
+  text-align: end;
+}
+
+.homeMain .rightSection .button button {
+  margin: 3.5em auto 1em auto;
+  padding: 0.8em;
+  background-color: transparent;
+  border: 2px solid #25283D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: 700;
+  outline: none;
+  cursor: pointer;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.homeMain .rightSection .button button:hover {
+  background-color: #25283D;
+  color: #EBEBED;
+}
+
+.homeFooter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 3em 2em;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #25283D;
+}
+
+.homeFooter .infoCard {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20%;
+          flex: 1 1 20%;
+  text-align: center;
+  padding: 2em;
+  border: 2px solid #EBEBED;
+  color: #EBEBED;
+  margin-right: 2em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.homeFooter .infoCard i {
+  font-size: 45px;
+}
+
+.homeFooter .infoCard p {
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: .5px;
+  margin: 1.5em 0.7em 1em 0.7em;
+}
+
+.homeFooter .infoCard:hover {
+  color: #25283D;
+  background-color: #EBEBED;
+}
+
+.infoMain {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 1em 4em;
+}
+
+.infoMain .renderInfo .totalPrice {
+  text-align: end;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 0.5em 2em;
+  background-color: #EBEBED;
+  border: 2px solid #25283D;
+}
+
+.infoMain .infoRequests {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 30%;
+          flex: 1 1 30%;
+  margin: 2em 0;
+}
+
+.infoMain .infoRequests .shopListInfo {
+  position: relative;
+  margin-bottom: 0.3em;
+}
+
+.infoMain .infoRequests .shopListInfo button {
+  position: absolute;
+  padding: 0.5em;
+  top: 4px;
+  right: 45px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #EBEBED;
+  outline: none;
+  background-color: #5D4061;
+  border: 1px solid #EBEBED;
+  -webkit-transition: all .2s ease-in;
+  transition: all .2s ease-in;
+}
+
+.infoMain .infoRequests .shopListInfo button:hover {
+  background-color: #EBEBED;
+  color: #25283D;
+  border: 1px solid #25283D;
+}
+
+.infoMain .infoRequests h1 {
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #25283D;
+  margin-bottom: 1em;
+}
+
+.infoMain .infoRequests .infoData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background-color: #25283D;
+  width: 30em;
+  margin: 0 auto;
+  padding: 1.5em;
+}
+
+.infoMain .infoRequests .infoData p {
+  text-align: center;
+  color: #EBEBED;
+  font-size: 13px;
+  text-transform: uppercase;
+}
+
+.infoMain .infoRequests .infoData p span {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.infoMain .renderInfo {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 66%;
+          flex: 1 1 66%;
+}
+/*# sourceMappingURL=App.css.map */
