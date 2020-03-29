@@ -14,9 +14,9 @@ const RequestItem = ({ request }) => {
                 dispatch({type:target.checked ? 'DONE_REQUEST' : 'UNDONE_REQUEST', id: request.id})} />              
                 <p>{request.product}</p>
                 <p>{request.shop}</p>
-                <p>Кол.: <span>{request.quantity}</span></p>
-                <p>{request.price} лв.</p>
-                <p>{request.sum} лв.</p>
+                <p>Quent.: <span>{request.quantity}</span></p>
+                <p>{request.price} lv.</p>
+                <p>{request.sum} lv.</p>
             </div>
             <div className='settings'>{ !request.done ? (
                 <Fragment>
