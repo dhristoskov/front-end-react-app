@@ -15,7 +15,7 @@ const RequestsList = () => {
                 })}        
         </div>
     ) : (
-        <div className='emptyList'>Листа с поръчки е празен</div>
+        <div className='emptyList'>Request List is empty</div>
     )
 }
 
