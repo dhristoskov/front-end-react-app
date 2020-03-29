@@ -58,17 +58,17 @@ const NewRequestForm = () => {
                     })}  
                 </div>
             ) : (
-                <div className='emptyShops'>Листа с търг. обекти е празен</div>
+                <div className='emptyShops'>Your shop list is empty</div>
             )}
                 <div>                            
-                    <input type='text' name='id' value={id} placeholder='Номер...' onChange={handleChange} required />
-                    <input type='text' name='product' value={product} placeholder='Продукт...' onChange={handleChange} required/>
+                    <input type='text' name='id' value={id} placeholder='ID...' onChange={handleChange} required />
+                    <input type='text' name='product' value={product} placeholder='Product...' onChange={handleChange} required/>
                 </div>
                 <div>
-                    <input type='text'name='quantity' value={quantity} placeholder='Количество...' onChange={handleChange} required />
-                    <input type='text' name='price' value={price} placeholder='Цена...' onChange={handleChange} required />
+                    <input type='text'name='quantity' value={quantity} placeholder='Quantity...' onChange={handleChange} required />
+                    <input type='text' name='price' value={price} placeholder='Price...' onChange={handleChange} required />
                 </div>           
-                <input type='submit' value='Създай' />          
+                <input type='submit' value='Create' />          
             </form>
             <i className='infoIcon'><GoInfo onClick={toggleHide} /></i>
             {
