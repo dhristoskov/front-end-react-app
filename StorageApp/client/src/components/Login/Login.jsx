@@ -21,7 +21,7 @@ const Login = () => {
                     <i className='iconVisibility'><MdVisibility  /></i> }</span>
                  </div>  
                 <input type="submit" value='Submit'/>
-                <p>Do you already have an account <Link to='/register' style={{ color: 'green', textDecoration:'none' }}> Press here</Link> </p>
+                <p>If you don't have an account yet<Link to='/register' style={{ color: 'green', textDecoration:'none' }}> Press here</Link> </p>
             </form>
         </section>
     );
