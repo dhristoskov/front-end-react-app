@@ -16,13 +16,13 @@ const NavHeader = () => {
             <div className='logo'>Logo</div>
             <div className='menu'>
                 <ul>
-                    <Link to='/' style={{textDecoration: 'none'}}><li>Начало</li></Link>
-                    <Link to='/newRequest' style={{textDecoration: 'none'}}><li>Създай Заявка</li></Link>
-                    <Link to='/requestsAll' style={{textDecoration: 'none'}}><li>Прегледай Заявки</li></Link>
+                    <Link to='/' style={{textDecoration: 'none'}}><li>Home</li></Link>
+                    <Link to='/newRequest' style={{textDecoration: 'none'}}><li>Make Request</li></Link>
+                    <Link to='/requestsAll' style={{textDecoration: 'none'}}><li>Requests</li></Link>
                 </ul>
                 <ul>
-                    <Link to='/login' style={{textDecoration: 'none'}}><li className='iconContainer'><span><AiOutlineLogin/></span>Вход</li></Link>
-                    <Link to='/register' style={{textDecoration: 'none'}}><li className='iconContainer'><span><AiOutlineUserAdd/></span>Регистрация</li></Link>
+                    <Link to='/login' style={{textDecoration: 'none'}}><li className='iconContainer'><span><AiOutlineLogin/></span>Log-in</li></Link>
+                    <Link to='/register' style={{textDecoration: 'none'}}><li className='iconContainer'><span><AiOutlineUserAdd/></span>Register</li></Link>
                 </ul>
             </div>
             <div className='toggleLight' onClick={toggleLight}>{ light ? <i className='iconLight'><FaMoon /></i>
