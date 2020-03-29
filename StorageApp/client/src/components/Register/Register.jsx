@@ -30,7 +30,7 @@ const Register = () => {
 
     return(
         <section className='authSection'> 
-            <h2>Регистрирай се</h2>
+            <h2>Registration</h2>
             <form onSubmit={handleSubmit} className='authFrom'>
                 <input type='text' name='name' value={name} placeholder='Name:' 
                  onChange={handleChange} required />
@@ -44,9 +44,9 @@ const Register = () => {
                  </div>     
                 <input type='password' name='password2' value={password2} placeholder='Confirm Password:'
                  onChange={handleChange} required />
-                <input type="submit" value='Създай'/>
-                <p>Ако вече имате създадена Регистрация 
-                 <Link to='/login' style={{ color: 'green', textDecoration:'none' }}> Натиснете тук</Link> </p>
+                <input type="submit" value='Submit'/>
+                <p>Do you already have an account 
+                 <Link to='/login' style={{ color: 'green', textDecoration:'none' }}> Press here</Link> </p>
             </form>
         </section>
     );
