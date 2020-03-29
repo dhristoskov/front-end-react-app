@@ -12,7 +12,7 @@ const Login = () => {
 
     return(
         <section className='authSection'> 
-            <h2>Вход в сайта</h2>
+            <h2>Log-In</h2>
             <form className='authFrom'>
                 <input type='email' name='email' placeholder='E-mail:' required />
                 <div className='toggle'>
@@ -20,8 +20,8 @@ const Login = () => {
                     <span onClick={toggle}>{unVisible ? <i className='iconVisibility'><MdVisibilityOff /></i> : 
                     <i className='iconVisibility'><MdVisibility  /></i> }</span>
                  </div>  
-                <input type="submit" value='Влез'/>
-                <p>Ако нямате създадена Регистрация <Link to='/register' style={{ color: 'green', textDecoration:'none' }}> Натиснете тук</Link> </p>
+                <input type="submit" value='Submit'/>
+                <p>Do you already have an account <Link to='/register' style={{ color: 'green', textDecoration:'none' }}> Press here</Link> </p>
             </form>
         </section>
     );
