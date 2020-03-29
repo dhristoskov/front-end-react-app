@@ -10,11 +10,11 @@ const LandingPage = () => {
     let timeOfDay;
 
     if(hours > 5 && hours < 12){
-        timeOfDay = "Добро Утро";
+        timeOfDay = "Good Morning";
     }else if(hours > 12 && hours < 17){
-        timeOfDay = "Здравей";
+        timeOfDay = "Good Afternoon";
     }else{
-        timeOfDay = "Добър Вечер";
+        timeOfDay = "Good Evening";
     }
 
 
@@ -24,14 +24,14 @@ const LandingPage = () => {
             <div className='leftSection'></div>
             <aside className='rightSection'>
               <div>
-                <h1>{timeOfDay}, заповядай<span>в нашата платформа</span></h1>
+                <h1>{timeOfDay}, welcome<span>in our app</span></h1>
                 <p>За да използваш платформата за поръчки първо трябва да създадеш
                     свои парола и потребителско име.
                 </p>
                 <div className='button'>
-                  <Link to='/register'><button>Регистрирай се</button></Link>
+                  <Link to='/register'><button>Registration</button></Link>
                 </div>               
-                <p>Ако вече имаш Регистрация <Link to='/login' style={{ color: 'green', textDecoration:'none' }}> Натиснете тук</Link> </p>
+                <p>Ако вече имаш Регистрация <Link to='/login' style={{ color: 'green', textDecoration:'none' }}> Click here</Link> </p>
               </div>
             </aside>      
         </main>
