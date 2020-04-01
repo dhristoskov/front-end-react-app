@@ -8,8 +8,8 @@ const ShopItem = ({ shop }) => {
 
     return(
         <div className='listItem'>  
-            <p>Име: <span>{shop.name}</span></p>
-            <p>Бележка: <span>{shop.notice}</span></p>
+            <p>Name: <span>{shop.name}</span></p>
+            <p>Notica: <span>{shop.notice}</span></p>
             <div className='settings'>
                 <p onClick={() => dispatch({type: 'REMOVE_SHOP', id: shop.id})}><AiOutlineDelete /></p>
             </div>   
