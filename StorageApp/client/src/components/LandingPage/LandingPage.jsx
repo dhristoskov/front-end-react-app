@@ -31,14 +31,14 @@ const LandingPage = () => {
                 <div className='button'>
                   <Link to='/register'><button>Registration</button></Link>
                 </div>               
-                <p>Ако вече имаш Регистрация <Link to='/login' style={{ color: 'green', textDecoration:'none' }}> Click here</Link> </p>
+                <p>If you have account already  <Link to='/login' style={{ color: 'green', textDecoration:'none' }}> Click here</Link> </p>
               </div>
             </aside>      
         </main>
         <footer className='homeFooter'>
             <div className='infoCard'>
                 <i><GiAlarmClock /></i>
-                <p>Нашата платформа ще ви спести време</p>
+                <p>With our app you will save time</p>
             </div> 
             <div className='infoCard'>
                 <i><FaShippingFast /></i>
