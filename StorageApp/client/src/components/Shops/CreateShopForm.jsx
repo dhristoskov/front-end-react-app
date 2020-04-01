@@ -36,10 +36,10 @@ const CreateShopFrom = () => {
    return (
     <div className='formShopContainer'>
         <form onSubmit={handleSubmit}>
-            <input type='text' name='id' value={id} placeholder='Номер...' onChange={handleChange} required />
-            <input type='text' name='name' value={name} placeholder='Име...' onChange={handleChange} required></input>
-            <input type='text'name='notice' value={notice} placeholder='Бележка...' onChange={handleChange} required></input>      
-            <input type='submit' value='Създай'></input>
+            <input type='text' name='id' value={id} placeholder='Number...' onChange={handleChange} required />
+            <input type='text' name='name' value={name} placeholder='Name...' onChange={handleChange} required></input>
+            <input type='text'name='notice' value={notice} placeholder='Notice...' onChange={handleChange} required></input>      
+            <input type='submit' value='Create'></input>
         </form>
         <i className='infoIcon'><GoInfo onClick={toggleHide} /></i>
             {
