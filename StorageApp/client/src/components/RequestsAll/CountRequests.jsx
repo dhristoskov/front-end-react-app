@@ -25,9 +25,9 @@ const CountRequests = () => {
     return( 
         <main className='infoMain'>
             <section className='infoRequests'>
-                <h1>Информация за заявките</h1>
+                <h1>Request Information</h1>
                 <div className='infoData'>
-                    <p><span>{notYetDone} </span> отворени заявки</p>
+                    <p><span>{notYetDone} </span> create a request</p>
                     <p>Завършени<span> {done} </span>заявки</p>
                 </div>
                 { shops.length ? (
